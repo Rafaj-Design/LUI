@@ -1,6 +1,0 @@
-framework module LUIFramework {
-  umbrella header "LUIFramework.h"
-
-  export *
-  module * { export * }
-}

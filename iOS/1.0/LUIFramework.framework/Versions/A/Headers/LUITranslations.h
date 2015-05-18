@@ -31,5 +31,7 @@ extern NSString *const LUITranslationDidUpdateContentNotification;
 - (NSString *)get:(NSString *)key withDefaultString:(NSString *)defaultString table:(NSString *)tableName NS_FORMAT_ARGUMENT(1);
 - (NSString *)get:(NSString *)key table:(NSString *)tableName NS_FORMAT_ARGUMENT(1);
 
++ (NSLocale *)currentLocale;
+
 
 @end

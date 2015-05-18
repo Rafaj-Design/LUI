@@ -8,10 +8,10 @@
 #import <UIKit/UIKit.h>
 
 //! Project version number for LUIFramework.
-FOUNDATION_EXPORT double LUIFrameworkVersionNumber;
+//FOUNDATION_EXPORT double LUIFrameworkVersionNumber;
 
 //! Project version string for LUIFramework.
-FOUNDATION_EXPORT const unsigned char LUIFrameworkVersionString[];
+//FOUNDATION_EXPORT const unsigned char LUIFrameworkVersionString[];
 
 
 #import <LUIFramework/UILabel+LUITranslations.h>
