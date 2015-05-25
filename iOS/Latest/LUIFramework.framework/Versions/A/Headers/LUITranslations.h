@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "LUIEnums.h"
+#import "LUIBasicData.h"
 
 
 extern NSString *const LUITranslationDidUpdateContentNotification;
@@ -17,12 +18,11 @@ extern NSString *const LUITranslationDidUpdateContentNotification;
 #define LUITranslate(key)                                   LUILocalizedString(key, nil)
 
 
-@interface LUITranslations : NSObject
+@interface LUITranslations : LUIBasicData
 
-@property (nonatomic, strong) NSString *currentLanguage;
+@property (nonatomic, strong) NSString *currentLanguageCode;
 
 @property (nonatomic) LUIBuild version;                                     // Translation version, default is LUIBuildLive, use NSInteger for specific version
-@property (nonatomic, strong) NSString *bundledTranslationFileName;         // Default is localization.json, will cause crash if file is not found in the bundle
 
 + (instancetype)sharedInstance;
 + (NSArray *)allKeys;
