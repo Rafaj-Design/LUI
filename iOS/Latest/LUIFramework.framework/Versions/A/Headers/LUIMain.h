@@ -10,9 +10,14 @@
 
 @interface LUIMain : NSObject
 
-@property (nonatomic, strong) NSString *apiKey;         // Mandatory field
-//@property (nonatomic, strong) NSString *baseUrl;        // Defaults to SDK default url at the time of the SDK release, if set a different base URL for the API, this is set globally for all modules and will disable analytics
-@property (nonatomic) BOOL debugMode;                   // Default NO
+// It is mandatory to set apiKey to enable this service even in a staging mode
+// Find your API key in the LiveUI admin panel
+@property (nonatomic, strong) NSString *apiKey;
+
+// Default NO, make sure you don't release your app with debug mode enabled.
+// Failing to do so could heavily increase your API usage and disable the service!
+// Debug mode will also add some extra processing so be aware of potential performance issues
+@property (nonatomic) BOOL debugMode;
 
 + (instancetype)sharedInstance;
 
