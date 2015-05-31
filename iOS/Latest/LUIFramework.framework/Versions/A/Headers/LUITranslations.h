@@ -12,10 +12,13 @@
 
 /*
  
- To override NSLocalizedString(key, comment), import the following in your app delegate:
+ To override NSLocalizedString(key, comment), import the NSLocalizedStringOverride.h in your files instead of LUIFramework.h:
+ 
+ #import <LUIFramework/NSLocalizedStringOverride.h>
+ 
+ instead of
  
  #import <LUIFramework/LUIFramework.h>
- #import <LUIFramework/NSLocalizedStringOverride.h>
  
  */
 

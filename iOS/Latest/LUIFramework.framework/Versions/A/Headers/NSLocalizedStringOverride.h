@@ -5,6 +5,10 @@
 //  Copyright (c) 2015 Ridiculous Innovations. All rights reserved.
 //
 
+
+#import <LUIFramework/LUIFramework.h>
+
+
 #ifndef LUIFramework_NSLocalizedStringOverride_h
 #define LUIFramework_NSLocalizedStringOverride_h
 
