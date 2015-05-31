@@ -10,6 +10,16 @@
 #import "LUIBasicData.h"
 
 
+/*
+ 
+ To override NSLocalizedString(key, comment), import the following in your app delegate:
+ 
+ #import <LUIFramework/LUIFramework.h>
+ #import <LUIFramework/LUIOverrides.h>
+ 
+ */
+
+
 extern NSString *const LUITranslationDidUpdateContentNotification;
 
 
