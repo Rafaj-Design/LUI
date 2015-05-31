@@ -12,5 +12,5 @@ LiveUI mobile SDK's
 
     
     #import <LUIFramework/LUIFramework.h>
-    #import <LUIFramework/LUIOverrides.h>
+    #import <LUIFramework/NSLocalizedStringOverride.h>
     

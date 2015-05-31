@@ -15,7 +15,7 @@
  To override NSLocalizedString(key, comment), import the following in your app delegate:
  
  #import <LUIFramework/LUIFramework.h>
- #import <LUIFramework/LUIOverrides.h>
+ #import <LUIFramework/NSLocalizedStringOverride.h>
  
  */
 
