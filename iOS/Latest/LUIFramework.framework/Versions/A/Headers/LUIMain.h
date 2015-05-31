@@ -19,6 +19,11 @@
 // Debug mode will also add some extra processing so be aware of potential performance issues
 @property (nonatomic) BOOL debugMode;
 
+// Default NO, if set to yes, a dialog asking for permission to access location services
+// will be triggered when the app starts for the first time
+// Location accuracy is set to kCLLocationAccuracyThreeKilometers
+@property (nonatomic) BOOL allowLocationServices;
+
 + (instancetype)sharedInstance;
 
 

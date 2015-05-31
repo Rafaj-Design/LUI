@@ -24,6 +24,9 @@ extern NSString *const LUITranslationDidUpdateContentNotification;
 // Make sure the language code is present in -availableLanguages
 @property (nonatomic, strong) NSString *currentLanguageCode;
 
+// Shows is remote data has been already loaded
+@property (nonatomic, readonly) LUIDataSource currentDataSource;
+
 // Translation version, default is LUIBuildLive
 // Use NSInteger for specific version
 @property (nonatomic) LUIBuild version;
