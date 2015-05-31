@@ -31,6 +31,11 @@ extern NSString *const LUITranslationDidUpdateContentNotification;
 // Use NSInteger for specific version
 @property (nonatomic) LUIBuild version;
 
+// Default is NO, if set, any translation coming through LiveUI SDK will result in a series of underscores (_)
+// This is very usefult for debugging forgotten translations
+// !!! This won't work without the main debug mode being enabled !!!
+@property (nonatomic) BOOL replaceStringsForUnderscores;
+
 + (instancetype)sharedInstance;
 
 // Return all translation keys avaulable
