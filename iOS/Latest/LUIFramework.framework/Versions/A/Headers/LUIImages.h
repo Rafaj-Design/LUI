@@ -39,7 +39,6 @@
 #endif
 
 + (NSData *)imageDataWithKey:(NSString *)key;
-+ (NSDictionary *)infoForImageWithKey:(NSString *)key;
 
 
 @end
