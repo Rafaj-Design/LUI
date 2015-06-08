@@ -12,5 +12,7 @@
 
 + (SKSpriteNode *)spriteNodeWithLUIImageNamed:(NSString *)name;
 
+- (void)registerNodeWithImageKey:(NSString *)key;
+
 
 @end

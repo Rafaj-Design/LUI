@@ -20,6 +20,9 @@
 #import "LUIBasicData.h"
 
 
+extern NSString *const LUIImagesDidUpdateContentNotification;
+
+
 #define LUIImage(key)                                   [LUIImages imageWithKey:key]
 
 

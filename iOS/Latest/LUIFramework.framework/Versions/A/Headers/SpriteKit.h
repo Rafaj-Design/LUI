@@ -7,5 +7,6 @@
 
 #import <LUIFramework/LUIFramework.h>
 
+#import <LUIFramework/SKLabelNode+LUITranslations.h>
 #import <LUIFramework/SKTexture+LUIImages.h>
 #import <LUIFramework/SKSpriteNode+LUIImages.h>
