@@ -38,7 +38,7 @@ FOUNDATION_EXPORT const unsigned char LUIFrameworkVersionString[];
 #import <LUIFramework/UITableView+LUITranslations.h>
 
 #import <LUIFramework/UIImageView+LUIImages.h>
-#import "UIButton+LUIImages.h"
+#import <LUIFramework/UIButton+LUIImages.h>
 
 // iOS specific interfaces
 #import <LUIFramework/LUILanguageSelectorViewController.h>
