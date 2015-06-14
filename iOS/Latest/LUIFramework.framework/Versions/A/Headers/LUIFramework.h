@@ -29,11 +29,11 @@ FOUNDATION_EXPORT const unsigned char LUIFrameworkVersionString[];
 
 // iOS only helper categories
 #import <LUIFramework/UILabel+LUITranslations.h>
-#import <LUIFramework/UIViewController+LUITranslations.h>
 #import <LUIFramework/UIBarItem+LUITranslations.h>
-#import <LUIFramework/UIButton+LUITranslations.h>
 #import <LUIFramework/UISearchBar+LUITranslations.h>
 #import <LUIFramework/UITextField+LUITranslations.h>
+#import <LUIFramework/UIViewController+LUITranslations.h>
+#import <LUIFramework/UIButton+LUITranslations.h>
 #import <LUIFramework/UITextView+LUITranslations.h>
 #import <LUIFramework/UITableView+LUITranslations.h>
 
@@ -46,8 +46,14 @@ FOUNDATION_EXPORT const unsigned char LUIFrameworkVersionString[];
 #elif TARGET_OS_MAC
 
 // Mac only helper categories
+#import <LUIFramework/NSViewController+LUITranslations.h>
+#import <LUIFramework/NSButton+LUITranslations.h>
+#import <LUIFramework/NSTextField+LUITranslations.h>
 
 #endif
+
+// Common helper categories
+#import <LUIFramework/NSObject+LUITranslations.h>
 
 #import <LUIFramework/LUIEnums.h>
 #import <LUIFramework/LUILanguage.h>
