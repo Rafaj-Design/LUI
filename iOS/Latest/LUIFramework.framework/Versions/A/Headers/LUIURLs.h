@@ -10,11 +10,28 @@
 
 @interface LUIURLs : NSObject
 
+/**
+ *  Instance of LUIURLs
+ *
+ *  @note Use instead any -init methods, if you use -init, your app will crash
+ *
+ *  @return LUIURLs instance of this object
+ */
 + (instancetype)sharedInstance;
 
-@property (nonatomic, strong) NSString *customWebUrlString;
+/**
+ *  Set your own API url
+ *
+ *  @note For enterprise implementations where data is hosted on clients servers
+ */
 @property (nonatomic, strong) NSString *customApiUrlString;
-@property (nonatomic, strong) NSString *customImagesUrlString;
+
+/**
+ *  Set your own Assets/CDN url
+ *
+ *  @note For enterprise implementations where data is hosted on clients servers
+ */
+@property (nonatomic, strong) NSString *customAssetsUrlString;
 
 
 @end

@@ -10,6 +10,11 @@
 
 @interface UIButton (LUITranslations)
 
+/**
+ *  Register button's title (on UIControlStateNormal) to be reloaded once the localization is updated
+ *
+ *  @param key localization key setup in the admin panel
+ */
 - (void)registerNormalStateTitleWithTranslationKey:(NSString *)key;
 
 

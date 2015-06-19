@@ -10,6 +10,11 @@
 
 @interface UIBarItem (LUITranslations)
 
+/**
+ *  Register bar item to be reloaded once the localization is updated
+ *
+ *  @param key localization key setup in the admin panel
+ */
 - (void)registerTitleWithTranslationKey:(NSString *)key;
 
 

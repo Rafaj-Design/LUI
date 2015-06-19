@@ -10,6 +10,11 @@
 
 @interface UIImageView (LUIImages)
 
+/**
+ *  Register image view to be reloaded once a new image is fetched
+ *
+ *  @param key localization key setup in the admin panel
+ */
 - (void)registerWithImageKey:(NSString *)key;
 
 

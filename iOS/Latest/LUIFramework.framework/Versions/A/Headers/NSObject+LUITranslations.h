@@ -10,6 +10,11 @@
 
 @interface NSObject (LUITranslations)
 
+/**
+ *  Register any object to be reloaded once the localization is updated
+ *
+ *  @note Element needs to have a method -reloadData implemented in order to make this work
+ */
 - (void)registerForReloadData;
 
 

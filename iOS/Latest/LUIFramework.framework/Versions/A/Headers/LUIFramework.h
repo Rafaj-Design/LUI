@@ -62,5 +62,5 @@ FOUNDATION_EXPORT const unsigned char LUIFrameworkVersionString[];
 
 #import <LUIFramework/LUIMain.h>
 #import <LUIFramework/LUITranslations.h>
-#import <LUIFramework/LUIImages.h>
+#import <LUIFramework/LUIVisuals.h>
 

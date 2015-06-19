@@ -10,6 +10,11 @@
 
 @interface UIViewController (LUITranslations)
 
+/**
+ *  Register view controller's title to be reloaded once the localization is updated
+ *
+ *  @param key localization key setup in the admin panel
+ */
 - (void)registerTitleWithTranslationKey:(NSString *)key;
 
 

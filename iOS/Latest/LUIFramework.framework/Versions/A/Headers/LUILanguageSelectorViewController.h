@@ -5,13 +5,11 @@
 //  Copyright (c) 2015 Ridiculous Innovations. All rights reserved.
 //
 
-/*
- 
- Use:
- 
- LUILanguageSelectorViewController *c = [[LUILanguageSelectorViewController alloc] init];
- [self presentViewController:c animated:YES completion:nil];
- 
+/**
+ *  Use:
+ *
+ *  LUILanguageSelectorViewController *c = [[LUILanguageSelectorViewController alloc] init];
+ *  [self presentViewController:c animated:YES completion:nil];
  */
 
 #import <UIKit/UIKit.h>
@@ -21,11 +19,18 @@
 
 @interface LUILanguageSelectorViewController : UINavigationController
 
-// Table view controller inside this navigation controller
-// Access through this variable will allow some level of customisation
+/**
+ *  Table view controller inside this navigation controller
+ *
+ *  @note Access through this variable will allow some level of customisation
+ */
 @property (nonatomic, readonly) LUILanguageSelectorContentTableViewController *contentController;
 
-// Defaults to UITableViewCellStyleSubtitle
+/**
+ *  Cell presentation style in language selector
+ *
+ *  @note Defaults to UITableViewCellStyleSubtitle
+ */
 @property (nonatomic) UITableViewCellStyle cellPresentationStyle;
 
 
