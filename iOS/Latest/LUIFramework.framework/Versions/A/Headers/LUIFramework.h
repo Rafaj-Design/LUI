@@ -64,3 +64,5 @@ FOUNDATION_EXPORT const unsigned char LUIFrameworkVersionString[];
 #import <LUIFramework/LUITranslations.h>
 #import <LUIFramework/LUIVisuals.h>
 
+#import <LUIFramework/LUIDebugger.h>
+

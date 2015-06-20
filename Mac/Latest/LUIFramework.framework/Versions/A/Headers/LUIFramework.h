@@ -47,6 +47,7 @@ FOUNDATION_EXPORT const unsigned char LUIFrameworkVersionString[];
 
 // Mac only helper categories
 #import <LUIFramework/NSViewController+LUITranslations.h>
+#import <LUIFramework/NSWindow+LUITranslations.h>
 #import <LUIFramework/NSButton+LUITranslations.h>
 #import <LUIFramework/NSTextField+LUITranslations.h>
 
@@ -61,5 +62,7 @@ FOUNDATION_EXPORT const unsigned char LUIFrameworkVersionString[];
 
 #import <LUIFramework/LUIMain.h>
 #import <LUIFramework/LUITranslations.h>
-#import <LUIFramework/LUIImages.h>
+#import <LUIFramework/LUIVisuals.h>
+
+#import <LUIFramework/LUIDebugger.h>
 

@@ -10,6 +10,13 @@
 
 @interface SKTexture (LUIImages)
 
+/**
+ *  Return texture with image from LiveUI
+ *
+ *  @param name name/key of the image
+ *
+ *  @return SKTexture texture
+ */
 + (SKTexture *)textureWithLUIImageNamed:(NSString *)name;
 
 

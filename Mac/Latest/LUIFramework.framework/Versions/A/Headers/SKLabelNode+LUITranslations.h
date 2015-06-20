@@ -10,6 +10,11 @@
 
 @interface SKLabelNode (LUITranslations)
 
+/**
+ *  Register label node to be reloaded once the localization is updated
+ *
+ *  @param key localization key setup in the admin panel
+ */
 - (void)registerTextWithTranslationKey:(NSString *)key;
 
 

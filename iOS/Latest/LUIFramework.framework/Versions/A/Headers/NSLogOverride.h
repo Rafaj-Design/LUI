@@ -1,6 +1,5 @@
 //
 //  NSLogOverride.h
-//  LUIFramework
 //
 //  Created by Ondrej Rafaj on 16/06/2015.
 //  Copyright (c) 2015 Ridiculous Innovations. All rights reserved.

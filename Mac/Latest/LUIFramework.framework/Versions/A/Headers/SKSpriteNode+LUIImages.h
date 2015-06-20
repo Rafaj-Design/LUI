@@ -10,8 +10,20 @@
 
 @interface SKSpriteNode (LUIImages)
 
+/**
+ *  Return sprite node with texture/image from LiveUI
+ *
+ *  @param name name/key of the image
+ *
+ *  @return SKSpriteNode node
+ */
 + (SKSpriteNode *)spriteNodeWithLUIImageNamed:(NSString *)name;
 
+/**
+ *  Register node's texture to be reloaded once a new image is fetched
+ *
+ *  @param key localization key setup in the admin panel
+ */
 - (void)registerNodeWithImageKey:(NSString *)key;
 
 

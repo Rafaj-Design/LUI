@@ -15,17 +15,17 @@
 		<data>
 		NQD2339QlCM1spRR9QMr+FbqXzI=
 		</data>
+		<key>Headers/LUIDebugger.h</key>
+		<data>
+		iW3Kvmc9mI0zWethIm/0xoomsSY=
+		</data>
 		<key>Headers/LUIEnums.h</key>
 		<data>
-		f9OhrwUDX7BKXr2deCUR5da2JnI=
+		uwoYkA8NHiXp4HhFuMExUTRtfDE=
 		</data>
 		<key>Headers/LUIFramework.h</key>
 		<data>
-		JwjO9ukIW4IWPozud+iagcoJ+Ak=
-		</data>
-		<key>Headers/LUIImages.h</key>
-		<data>
-		TWz1qC56BjoGIReD4VP8Y0Ss2j8=
+		yxbK8ttnM3fw+MD/GU5NNcMjDkc=
 		</data>
 		<key>Headers/LUILanguage.h</key>
 		<data>
@@ -33,47 +33,59 @@
 		</data>
 		<key>Headers/LUIMain.h</key>
 		<data>
-		LSRerkpfoFeA0Jal1tnuAhlrxNQ=
+		8qr60x0gTAeIWN0dS+UZjYyzeHM=
 		</data>
 		<key>Headers/LUITranslations.h</key>
 		<data>
-		uSIXecMHFYK0Munukh89NMienYI=
+		Nd3KlGkRFUwUBK82bSIGrrNvvcU=
 		</data>
 		<key>Headers/LUIURLs.h</key>
 		<data>
-		VpUCbqz9TZDZK2ga9yK2lXzxUsI=
+		8djlignfMAnC1tbnhMI/dcj13N0=
+		</data>
+		<key>Headers/LUIVisuals.h</key>
+		<data>
+		6Te3nRmZNMdMiKNGFNMXz5HTdzw=
 		</data>
 		<key>Headers/NSButton+LUITranslations.h</key>
 		<data>
-		ZSL/tG4gdKwpS2aJBDeKT1FP1dw=
+		o0BPJtCizKGE2W/VcvTpwJTlDW4=
 		</data>
 		<key>Headers/NSLocalizedStringOverride.h</key>
 		<data>
 		xVblj/n30DbvU4Gt7k/WiFGEVBQ=
 		</data>
+		<key>Headers/NSLogOverride.h</key>
+		<data>
+		mImQ51wxxK1EnV6PudoKWlj+sqE=
+		</data>
 		<key>Headers/NSObject+LUITranslations.h</key>
 		<data>
-		UsEy9l9oNldwX7oxQun4GerXMko=
+		ITUd7GSW0krm2TARNh4J9CunBbk=
 		</data>
 		<key>Headers/NSTextField+LUITranslations.h</key>
 		<data>
-		QzcxgEZzYDW7cxeySZxxDCgbANs=
+		S2ege0oWz+PAOOlh390qX/TEXb0=
 		</data>
 		<key>Headers/NSViewController+LUITranslations.h</key>
 		<data>
-		0vO1LaDmdRyTZaW32cJ58Lb0JBE=
+		tZygUVuPxAt5FDec4Yto6htUIjs=
+		</data>
+		<key>Headers/NSWindow+LUITranslations.h</key>
+		<data>
+		/c69p726NOUuIzYgZAX2P5UwhCA=
 		</data>
 		<key>Headers/SKLabelNode+LUITranslations.h</key>
 		<data>
-		nco2iSw2XwKka2qY90DnPHCLdAY=
+		0x9j4FFVI/38IiL8AjdJVY0m6go=
 		</data>
 		<key>Headers/SKSpriteNode+LUIImages.h</key>
 		<data>
-		ZSyD/AdMo1IFzO7UQknhG34Bd04=
+		dEZQTMW6ne5u2fy6J+5K6w4FjIY=
 		</data>
 		<key>Headers/SKTexture+LUIImages.h</key>
 		<data>
-		E/0GdIsCloAF7XaQXlHcVpIGNpE=
+		JJLQc1UPZRy9I8y+uRSDlgjD4fc=
 		</data>
 		<key>Headers/SpriteKit.h</key>
 		<data>

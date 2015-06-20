@@ -24,26 +24,28 @@
  *
  *  @note You can use this for example to reload the interface
  */
-extern NSString *const LUIImagesDidUpdateContentNotification;
+extern NSString *const LUIVisualsDidUpdateContentNotification;
 
 /**
  *  Return image
  *
  *  @param key key for an image that has been been setup in your admin panel
  *
- *  @return UIImage image
+ *  @return UIImage/NSImage image
  */
 #define LUIImage(key)                                   [LUIVisuals imageWithKey:key]
 
+/**
+ *  Return color
+ *
+ *  @param key key for an image that has been been setup in your admin panel
+ *
+ *  @return UIColor/NSColor color
+ */
+#define LUIColor(key)                                   [LUIVisuals colorWithKey:key]
+
 
 @interface LUIVisuals : LUIBasicData
-
-/**
- *  Default value is YES
- *
- *  @note If disabled, color will have to be converted from it's original value every time you want to use it
- */
-@property (nonatomic) BOOL enableColorCaching;
 
 /**
  *  Instance of LUIVisuals
@@ -59,7 +61,14 @@ extern NSString *const LUIImagesDidUpdateContentNotification;
  *
  *  @return NSArray of image keys
  */
-+ (NSArray *)allKeys;
++ (NSArray *)allImageKeys;
+
+/**
+ *  Return all color keys available
+ *
+ *  @return NSArray of color keys
+ */
++ (NSArray *)allColorKeys;
 
 #if TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE
 
@@ -104,6 +113,26 @@ extern NSString *const LUIImagesDidUpdateContentNotification;
 #endif
 
 /**
+ *  Returns a color key
+ *
+ *  @note Returns code like #FF0000 but without the leading hash (so, FF0000)
+ *
+ *  @param key key for a color that has been been setup in your admin panel
+ *
+ *  @return NSString color code
+ */
++ (NSString *)colorCodeWithKey:(NSString *)key;
+
+/**
+ *  Returns a color alpha value
+ *
+ *  @param key key key for a color that has been been setup in your admin panel
+ *
+ *  @return float 0.0f - 1.0f for color's alpha value
+ */
++ (CGFloat)alphaForColorWithKey:(NSString *)key;
+
+/**
  *  Return an image data
  *
  *  @param key key for an image that has been been setup in your admin panel
@@ -111,17 +140,6 @@ extern NSString *const LUIImagesDidUpdateContentNotification;
  *  @return NSData image data
  */
 + (NSData *)imageDataWithKey:(NSString *)key;
-
-/**
- *  Return a color string in hex format
- *
- *  @note Example: FF0000 for red, returns code without the leading #
- *
- *  @param key key for a color that has been been setup in your admin panel
- *
- *  @return NSString color code
- */
-+ (NSString *)colorHexCodeWithKey:(NSString *)key;
 
 
 @end
