@@ -55,6 +55,7 @@ FOUNDATION_EXPORT const unsigned char LUIFrameworkVersionString[];
 
 // Common helper categories
 #import <LUIFramework/NSObject+LUITranslations.h>
+#import <LUIFramework/NSObject+LUIVisuals.h>
 
 #import <LUIFramework/LUIEnums.h>
 #import <LUIFramework/LUILanguage.h>

@@ -15,7 +15,7 @@
  *
  *  @note Element needs to have a method -reloadData implemented in order to make this work
  */
-- (void)registerForReloadData;
+- (void)registerTranslationsForReloadData;
 
 
 @end
