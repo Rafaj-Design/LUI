@@ -12,7 +12,7 @@ typedef void (^LUIDynamicDataSuccessBlock)(NSArray *data, NSDictionary *map, NSE
 typedef void (^LUIDynamicDataCountSuccessBlock)(NSInteger count, NSError *error);
 
 
-@protocol LUIDataObjectLanguageObject;
+@protocol LUIDataLanguageObjectProtocol;
 
 @interface LUIDynamicData : LUIBasicData
 

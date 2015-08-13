@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 
 
-@protocol LUIDataObjectLanguageObject <NSObject>
+@protocol LUIDataLanguageObjectProtocol <NSObject>
 
 + (NSDictionary *)map;
 
@@ -33,12 +33,7 @@ typedef NS_ENUM(NSInteger, LUIDataObjectPublishedStatus) {
 @property (nonatomic, strong) NSDate *modified;
 
 @property (nonatomic, strong) NSDictionary *content;
-
-- (NSNumber *)numberForKey:(NSString *)key forLanguage:(NSString *)langCode;
-- (NSInteger)integerForKey:(NSString *)key forLanguage:(NSString *)langCode;
-- (BOOL)boolForKey:(NSString *)key forLanguage:(NSString *)langCode;
-- (NSString *)valueForKey:(NSString *)key forLanguage:(NSString *)langCode;
-- (NSDate *)dateForKey:(NSString *)key forLanguage:(NSString *)langCode;
+@property (nonatomic, strong) NSDictionary *info;
 
 
 @end
