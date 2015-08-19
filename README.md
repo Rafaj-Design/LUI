@@ -3,11 +3,9 @@ LiveUI iOS Framework
 
 #### LiveUI Framework is a set of client libraries to take advantage of a mobile deployment platform [LiveUI](http://www.liveui.io/) 
 
-Download iOS framework from here: [iOS Framework](https://github.com/Ridiculous-Innovations/LUI/tree/master/iOS/LUIFramework/Latest)
-
-Alpha:
-Download Mac OS X framework from here: [iOS Framework](https://github.com/Ridiculous-Innovations/LUI/tree/master/iOS/LUIFramework/Latest)
-!!! Mac OS X framework is not yet ready for a production environment. We will be adding documentation on how to use it properly soon
+Download iOS framework from here: [iOS Framework](https://github.com/Ridiculous-Innovations/LUI/tree/master/iOS/LUIFramework/Latest)  
+Download Mac OS X framework from here: [iOS Framework](https://github.com/Ridiculous-Innovations/LUI/tree/master/iOS/LUIFramework/Latest)  
+!!! Mac OS X framework is in alpha mode and not yet ready for a production environment. We will be adding documentation on how to use it properly soon
 
 
 ## Basic installation
@@ -21,7 +19,6 @@ Download Mac OS X framework from here: [iOS Framework](https://github.com/Ridicu
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [[LUIMain sharedInstance] setApiKey:@"XXXXX-XXXX-YOUR-API-KEY-XXXXX-XXXX"];
-    
     return YES;
 }
 
@@ -37,7 +34,7 @@ If you have .pch file in place in an existing project which is already localized
 1. If you want to use bundle autoupdate functionality, make sure the framework is physically present at the root of your project
 3. Go to your target's "Build Phases"
 4. Add a "New Run Script Phase"
-5. Paste in following: ./LUIFramework.framework/Update "XXXXX-XXXX-YOUR-API-KEY-XXXXX-XXXX"
+5. Paste in following: ```./LUIFramework.framework/Update "XXXXX-XXXX-YOUR-API-KEY-XXXXX-XXXX"```
 6. Build your project (Cmd+B)
 
 #### Notes:
