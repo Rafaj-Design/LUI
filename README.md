@@ -5,7 +5,7 @@ LiveUI iOS Framework
 
 Download iOS framework from here: [iOS Framework](https://github.com/Ridiculous-Innovations/LUI/tree/master/iOS/LUIFramework/Latest)  
 Download Mac OS X framework from here: [iOS Framework](https://github.com/Ridiculous-Innovations/LUI/tree/master/iOS/LUIFramework/Latest)  
-!!! Mac OS X framework is in alpha mode and not yet ready for a production environment. We will be adding documentation on how to use it properly soon
+<small>!!! Mac OS X framework is in alpha mode and not yet ready for a production environment. We will be adding documentation on how to use it properly soon</small>
 
 
 ## Basic installation
