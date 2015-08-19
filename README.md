@@ -1,11 +1,11 @@
 LiveUI iOS Framework
 ================
 
-#### LiveUI Framework is a set of client libraries to take advantage of a mobile deployment platform [LiveUI](http://www.liveui.io/) 
+###### LiveUI Framework is a set of client libraries to take advantage of a mobile deployment platform [LiveUI](http://www.liveui.io/) 
 
-Download iOS framework from here: [iOS Framework](https://github.com/Ridiculous-Innovations/LUI/tree/master/iOS/LUIFramework/Latest)  
-Download Mac OS X framework from here: [iOS Framework](https://github.com/Ridiculous-Innovations/LUI/tree/master/iOS/LUIFramework/Latest)  
-<small>!!! Mac OS X framework is in alpha mode and not yet ready for a production environment. We will be adding documentation on how to use it properly soon</small>
+## Download
+[iOS Framework](https://github.com/Ridiculous-Innovations/LUI/tree/master/iOS/LUIFramework/Latest)  
+[Mac OS X Framework](https://github.com/Ridiculous-Innovations/LUI/tree/master/iOS/LUIFramework/Latest) (!!! Mac OS X framework is in alpha mode and not yet ready for a production environment. We will be adding documentation on how to use it properly soon)
 
 
 ## Basic installation
