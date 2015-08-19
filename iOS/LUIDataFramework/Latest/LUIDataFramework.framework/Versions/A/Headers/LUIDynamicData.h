@@ -5,7 +5,7 @@
 //  Copyright (c) 2015 Ridiculous Innovations. All rights reserved.
 //
 
-#import <LUIFramework/LUIFramework.h>
+#import <Foundation/Foundation.h>
 
 
 typedef void (^LUIDynamicDataSuccessBlock)(NSArray *data, NSDictionary *map, NSError *error);
@@ -14,15 +14,12 @@ typedef void (^LUIDynamicDataCountSuccessBlock)(NSInteger count, NSError *error)
 
 @protocol LUIDataLanguageObjectProtocol;
 
-@interface LUIDynamicData : LUIBasicData
+@interface LUIDynamicData : NSObject
 
 
 @property (nonatomic, readonly) NSString *apiKey;
 
 @property (nonatomic, strong, readwrite, setter=registerDataObjectClass:) Class dataObjectClass;
-@property (nonatomic, strong, readwrite, setter=registerFileObjectClass:) Class fileObjectClass;
-@property (nonatomic, strong, readwrite, setter=registerImageObjectClass:) Class imageObjectClass;
-
 @property (nonatomic, strong) NSDictionary *dataObjectMapping;
 
 - (instancetype)initWithApiKey:(NSString *)apiKey;

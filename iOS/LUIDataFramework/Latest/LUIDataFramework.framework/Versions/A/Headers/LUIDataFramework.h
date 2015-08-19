@@ -6,7 +6,8 @@
 //  Copyright (c) 2015 Ridiculous Innovations. All rights reserved.
 //
 
-#import <LUIDataFramework/LUIURLs.h>
+#import <LUIFramework/LUIURLs.h>
 
 #import <LUIDataFramework/LUIDataObject.h>
+#import <LUIDataFramework/LUIDataFileObject.h>
 #import <LUIDataFramework/LUIDynamicData.h>
