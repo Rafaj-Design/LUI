@@ -134,5 +134,12 @@ extern NSString *const LUITranslationDidUpdateContentNotification;
  */
 + (NSLocale *)currentLocale;
 
+/**
+ *  Reloads translation data from the LiveUI servers
+ *
+ *  @note Using this method often will increase your API consumption significantly
+ */
++ (void)reloadData;
+
 
 @end
