@@ -16,16 +16,16 @@ LiveUI iOS Framework
 
 ```obj-c
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [[LUIMain sharedInstance] setApiKey:@"XXXXX-XXXX-YOUR-API-KEY-XXXXX-XXXX"];
     return YES;
 }
 
-
 ```
 
-## Bundle autoupdating (using run script)
+## Bundle autoupdating
+Bundle auto-updating will take care of importing the latest localization and other configuration files before every build so you won't have to. There is a smart script hidden in the LiveUI framework that will call the API service before every build (if the internet connection is available), pulls all the latest data and updates your bundle files.
+
 1. If you want to use bundle autoupdate functionality, make sure the framework is physically present at the root of your project
 3. Go to your target's "Build Phases"
 4. Add a "New Run Script Phase", double click the "Run Script" title and rename it to "LiveUI"
@@ -54,7 +54,19 @@ You can use ```LUIImage(key)``` to return an image or ```LUIColor(key)``` to ret
 Please take a look at the LUIVisuals.h header file for further documentation.
 
 ## Debugging
-You can enable debugging by setting ```[[LUIMain sharedInstance] setDebugMode:YES];``` in your ```-application:didFinishLaunchingWithOptions:``` method. This will enable:
+You can enable debugging by setting ```[[LUIMain sharedInstance] setDebugMode:YES];``` in your ```-application:didFinishLaunchingWithOptions:``` method.
+
+```obj-c
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [[LUIMain sharedInstance] setDebugMode:YES];
+	[[LUIMain sharedInstance] setApiKey:@"XXXXX-XXXX-YOUR-API-KEY-XXXXX-XXXX"];
+    return YES;
+}
+
+```
+
+This will enable:
 1. Reporting missing translations
   * Missing translation keys are being sent to the admin panel when the app goes to background (home button is pressed once)
   * Already reported missing translations are being cached until you restart the app
