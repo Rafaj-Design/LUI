@@ -36,7 +36,10 @@ LiveUI iOS Framework
   * In case you have multiple projects (even embeded projects) in your root folder, Update script won't be able to insert the bundle on it's own and you will have to add reference to the bundle yourself. LibeUI.bundle should be located in your root folder right next to the framework.
   * Bundle will become a member of all your targets if added automatically so make sure you manage the membership where this is not desirable
   
-  Format of the ./LUIFramework.framework/Update "XXXXX-XXXX-YOUR-API-KEY-XXXXX-XXXX"`
+Format of the Update script is following  ```./LUIFramework.framework/Update "{API_KEY}" {BUILD} {IMPORT_INTO_PROJECT}``` where:
+  * {API_KEY} - Your API key, this is available in LiveUI admin panel in your application settings
+  * {BUILD} - This is your build version, this can be `live`, `staging` or you can pass through a specific version number which you can find in your admin panel under "Version management"
+  * {IMPORT_INTO_PROJECT} - Can be `true` or `false` and determines if the Update script will try to import LiveUI.bundle into your project in case it will be missing from it. Default value is `true`
 
 ## Using Translations
 You can use ```LUILocalizedString(key, comment)``` or ```LUITranslate(key)``` to return a localized string.
