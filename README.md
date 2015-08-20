@@ -18,7 +18,7 @@ This manual has used Xcode 6.4 as a reference. There might be ome slight differe
 ```obj-c
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[LUIMain sharedInstance] setApiKey:@"XXXXX-XXXX-YOUR-API-KEY-XXXXX-XXXX"];
+    [[LUIMain sharedInstance] setApiKey:@"{YOUR_API_KEY}"];
     return YES;
 }
 
@@ -33,13 +33,13 @@ Bundle auto-updating will take care of importing the latest localization and oth
 3. Go to your target's "Build Phases"
 4. Add a "New Run Script Phase", double click the "Run Script" title and rename it to "LiveUI"
 5. Move your new "LiveUI" run script phase up, right under the "Target Dependencies"
-6. Paste in following: ```./LUIFramework.framework/Update "XXXXX-XXXX-YOUR-API-KEY-XXXXX-XXXX"```
+6. Paste in following: ```./LUIFramework.framework/Update "{YOUR_API_KEY}"```
 7. Build your project (Cmd+B)
   * If you are connected to the internet and you have filled in a correct API key, a new bundle (LiveUI.bundle) has been imported into your project into your "Supporting Files" group. In case you don't have "Supporting Files", the bundle has been imported into your project root.
   * In case you have multiple projects (even embeded projects) in your root folder, Update script won't be able to insert the bundle on it's own and you will have to add reference to the bundle yourself. LibeUI.bundle should be located in your root folder right next to the framework.
   * Bundle will become a member of all your targets if added automatically so make sure you manage the membership where this is not desirable
   
-  
+<!--
 #### Using run script in re-actions in your scheme
 
 1. Edit your app's scheme (you can do so by tapping on the "run/build" button while holding Alt (option) key)
@@ -50,6 +50,7 @@ Bundle auto-updating will take care of importing the latest localization and oth
 
 Note:  
 You can set a different "Update" configuration for example for your Archive/Release phase, etc ...
+-->
   
 Format of the Update script is following  ```./LUIFramework.framework/Update "{API_KEY}" {BUILD} {IMPORT_INTO_PROJECT}``` where:
   * {API_KEY} - Your API key, this is available in LiveUI admin panel in your application settings
@@ -75,7 +76,7 @@ You can enable debugging by setting ```[[LUIMain sharedInstance] setDebugMode:YE
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [[LUIMain sharedInstance] setDebugMode:YES];
-	[[LUIMain sharedInstance] setApiKey:@"XXXXX-XXXX-YOUR-API-KEY-XXXXX-XXXX"];
+	[[LUIMain sharedInstance] setApiKey:@"{YOUR_API_KEY}"];
     return YES;
 }
 
@@ -88,5 +89,19 @@ This will enable:
   * Already reported missing translations are being cached until you restart the app
   * Please make sure you always disable the debug mode for production environment, leaving it on could generate significant API traffic and limit your monthly API allowance
 2. See debug messages in the debug console
+
+To debug what string has been and which one has not been translated, you can enable mode in which all string will be replaced with equally long underscores ... this will give you an immediate visibility of what is yet to be translated.
+
+```obj-c
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [[LUIMain sharedInstance] setDebugMode:YES]; // Debug mode needs to be enabled
+	[[LUITranslations sharedInstance] setReplaceStringsForUnderscores:YES];
+	
+	[[LUIMain sharedInstance] setApiKey:@"{YOUR_API_KEY}"];
+    return YES;
+}
+
+```
 
 #### Notes:
