@@ -7,6 +7,7 @@ LiveUI iOS Framework
 [iOS Framework](https://github.com/Ridiculous-Innovations/LUI/tree/master/iOS/LUIFramework/Latest)  
 [Mac OS X Framework](https://github.com/Ridiculous-Innovations/LUI/tree/master/iOS/LUIFramework/Latest) - Mac OS X framework is in alpha mode and not yet ready for a production environment. We will be adding documentation on how to use it properly soon!!!
 
+This manual has used Xcode 6.4 as a reference. There might be ome slight difference between Xcode versions but the concept should always stay the same.
 
 ## Basic installation
 
@@ -26,6 +27,8 @@ LiveUI iOS Framework
 ## Bundle autoupdating
 Bundle auto-updating will take care of importing the latest localization and other configuration files before every build so you won't have to. There is a smart script hidden in the LiveUI framework that will call the API service before every build (if the internet connection is available), pulls all the latest data and updates your bundle files.
 
+#### Using run script in your targets build phase
+
 1. If you want to use bundle autoupdate functionality, make sure the framework is physically present at the root of your project
 3. Go to your target's "Build Phases"
 4. Add a "New Run Script Phase", double click the "Run Script" title and rename it to "LiveUI"
@@ -35,6 +38,18 @@ Bundle auto-updating will take care of importing the latest localization and oth
   * If you are connected to the internet and you have filled in a correct API key, a new bundle (LiveUI.bundle) has been imported into your project into your "Supporting Files" group. In case you don't have "Supporting Files", the bundle has been imported into your project root.
   * In case you have multiple projects (even embeded projects) in your root folder, Update script won't be able to insert the bundle on it's own and you will have to add reference to the bundle yourself. LibeUI.bundle should be located in your root folder right next to the framework.
   * Bundle will become a member of all your targets if added automatically so make sure you manage the membership where this is not desirable
+  
+  
+#### Using run script in re-actions in your scheme
+
+1. Edit your app's scheme (you can do so by tapping on the "run/build" button while holding Alt (option) key)
+2. Open Build, Run or Archive (or all of them one by one if you always want to update assets)
+3. Select Pre-actions
+4. Add a "New Run Script Action"
+5. Continue with step 6 of the "Using run script in your targets build phase"
+
+Note:  
+You can set a different "Update" configuration for example for your Archive/Release phase, etc ...
   
 Format of the Update script is following  ```./LUIFramework.framework/Update "{API_KEY}" {BUILD} {IMPORT_INTO_PROJECT}``` where:
   * {API_KEY} - Your API key, this is available in LiveUI admin panel in your application settings
@@ -67,6 +82,7 @@ You can enable debugging by setting ```[[LUIMain sharedInstance] setDebugMode:YE
 ```
 
 This will enable:
+
 1. Reporting missing translations
   * Missing translation keys are being sent to the admin panel when the app goes to background (home button is pressed once)
   * Already reported missing translations are being cached until you restart the app
