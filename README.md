@@ -69,6 +69,21 @@ You can use ```LUIImage(key)``` to return an image or ```LUIColor(key)``` to ret
 
 Please take a look at the LUIVisuals.h header file for further documentation.
 
+Example:
+```obj-c
+
+- (void)configureView
+	// Set background color
+    [self.view setBackgroundColor:LUIColor(@"VIEW_BACKGROUND_COLOR")];
+    
+	// Add logo
+    UIImage *img = LUIImage(@"HEADER_LOGO");
+    UIImageView *iv = [[UIImageView alloc] initWithImage:img];
+    [self.view addSubview:iv];
+}
+	
+```
+
 ## Debugging
 You can enable debugging by setting ```[[LUIMain sharedInstance] setDebugMode:YES];``` in your ```-application:didFinishLaunchingWithOptions:``` method.
 
