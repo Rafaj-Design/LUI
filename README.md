@@ -24,6 +24,8 @@ This manual has used Xcode 6.4 as a reference. There might be ome slight differe
 
 ```
 
+note: Shall you have any problems using LiveUI categories (like unrecognized selectors) , set `-ObjC -all_load` in your targets Build Settings->Other Linker Flags!
+
 ## Bundle autoupdating
 Bundle auto-updating will take care of importing the latest localization and other configuration files before every build so you won't have to. There is a smart script hidden in the LiveUI framework that will call the API service before every build (if the internet connection is available), pulls all the latest data and updates your bundle files.
 
